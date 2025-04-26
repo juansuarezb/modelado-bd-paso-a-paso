@@ -214,13 +214,30 @@
         <header>Modelo E-R</header>
         <article>
           <p>
-            Es un tipo de enfoque de diseño de BDs. Modela una
+            Es un tipo de <em>enfoque de diseño</em> de BDs. Modela una
             empresa como una colección de <em>entidades y relaciones.</em> Se
             representa mediante un <strong>diagrama entidad-relación</strong>. Y
-            emplea 3 conceptos básicos: Entidades, relaciones y atributos.
+            emplea 3 conceptos básicos: <strong>Entidades, relaciones y atributos.</strong>
           </p>
-          <p>Una relación es una asociación entre varias entidades. Tambíen puede representarse como una tabla.</p>
-          <h2>Fases del diseño</h2>
+          <p>Una <strong><em>relación</em></strong> es una asociación entre varias entidades. Tambíen puede representarse como una tabla (relaciones con atributos).</p>
+          <h3>Grado de una relación</h3>
+            <p>El número de entidades que participan en una relación.</p>
+            <p>Normalmente son del tipo <strong>binaria (o grado 2).</strong>
+             Una relación <strong>Ternaria</strong> podria ser: <br> <em>Estudiantes</em> trabajan</em> en un <em>proyecto</em> de investigación, bajo la supervisión de un <em>profesor</em>.</p>
+            </p>
+          <h3>Reestriciones de cardinalidad</h3>
+            <p>Especifica el número mínimo y máximo de entidades que pueden participar en una relación.</p>
+            <p>Para las relaciones binarias, la cardinalidad debe ser del tipo: </p>
+            <ul>
+                <li>Uno a uno (1:1)</li>
+                <li>Uno a muchos (1:N)</li>
+                <li>Muchos a uno (N:1)</li>
+                <li>Muchos a muchos (N:M)</li>
+            </ul>
+            <h3>Atributos redundantes</h3>
+            <p>Cuando 2 entidades tienen un mismo atributo se está presentando la redundancia y para resolver esto utilizamos una <strong>relación</strong></p>
+
+            <h3>Fases del diseño</h3>
           <p>
             En una “especificación de requiremientos funcionales ”, los usuarios
             describen los tipos de operaciones (o transacciones) que se realizan
