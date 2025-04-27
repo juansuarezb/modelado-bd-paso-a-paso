@@ -265,37 +265,91 @@
         <header>Modelo relacional</header>
         <article></article>
       </section>
-      <section class="main-section" id="Ejercicios_Resueltos"">
-        <header>Ejercicios Resueltos</header>
-        <article>
-          <h3>Examen 1er Bimestre 2023 - B</h3>
-          <p><strong>Ejercicio1: Escriba un esquema relacional que  contenga las tablas 
-            alumnos y materias, tomando en cuenta que los estudiantes obtienen que hay dos
-             notas bimestrales y una nota final en cada materia. Adicionalmente, considere que son necesarios los siguientes datos:
-             De los alumnos se requiere saber el nombre, la edad, la dirección y su cédula. De las materias se necesita el código, el nombre de la materia
-             y los créditos.</strong> 
-            </p>
-            <p>
-              Finalmente, <span class="highlight-underline">deberá ser posible que se conozcan las notas</span> que obtiene cada estudiante en cada materia.
-            </p>
-            <div class="note">
-            Según el enunciado lo que "relaciona" a las entidades estudiante y materia son las notas bimestrales y la nota final. AsÍ, ENCONTRAMOS la relación "notas", Finalmente, el enunciado especifica que deberá ser posible que se conozca las notas (persistencia) por lo tanto tenemos un atributo para la relación notas.
-            </div>
-            <figure>
-              <img src="docs/Ejercicio1.webp" alt="Ejercicio 1" width="80%" />
-              <figcaption>Ejercicio 1</figcaption>
-            </figure>
-             
-            <p><strong>Ejercicio2: La empresa SuperMarket Corporation requiere de una BD que permita apoyar la gestión de su sistema de ventas. La empresa necesita
-              llevar un control de proveedores, clientes, productos y ventas.
-              De los proveedores se requiere conocer su RUC, nombre, dirección, teléfono y página web. De los clientes se requiere saber su CI, nombre,
-              dirección y puede tener varios teléfonos de contacto. La dirección se entiende por calle, número y ciudad.
-              Un producto tiene un id único, nombre, precio actual, stock y nombre del proveedor. Además se organizan en categorías, y cada producto
-              va sólo en una categoría. Una categoría tiene id, nombre y descripción.
-              Por razones de contabilidad, se debe registrar la información de cada venta con un id, fecha, cliente, descuento y monto nal. Además se
-              debe guardar el precio al momento de la venta, la cantidad vendida y el monto total por el producto.
-              Elabore el diagrama Entidad-Relación.</strong> </p>
-      </section>
+      
+        
+        <section class="main-section" id="Ejercicios_Resueltos">
+          <header>Ejercicios Resueltos</header>
+        
+          <details>
+            <summary>Examen 1er Bimestre 2023 - B - Ejercicio 1</summary>
+            <article>
+              <h3>Examen 1er Bimestre 2023 - B</h3>
+              <p>
+                <strong>Ejercicio1: </strong> Escriba un esquema relacional que contenga las tablas
+                  alumnos y materias, tomando en cuenta que los estudiantes obtienen que hay dos
+                  notas bimestrales y una nota final en cada materia. Adicionalmente, considere que son necesarios los siguientes datos:
+                  De los alumnos se requiere saber el nombre, la edad, la dirección y su cédula. De las materias se necesita el código, el nombre de la materia
+                  y los créditos.
+              </p>
+              <p>
+                Finalmente, <span class="highlight-underline">deberá ser posible que se conozcan las notas</span> que obtiene cada estudiante en cada materia.
+              </p>
+              <div class="note">
+                Según el enunciado lo que "relaciona" a las entidades estudiante y materia son las notas bimestrales y la nota final. AsÍ, ENCONTRAMOS la relación "notas", Finalmente, el enunciado especifica que deberá ser posible que se conozca las notas (persistencia) por lo tanto tenemos un atributo para la relación notas.
+              </div>
+              <figure>
+                <img src="docs/Ejercicio1.webp" alt="Ejercicio 1" width="80%" />
+                <figcaption>Ejercicio 1</figcaption>
+              </figure>
+            </article>
+          </details>
+        
+          <details>
+            <summary>Examen 1er Bimestre 2023 - B - Ejercicio 2</summary>
+            <article>
+              <h3>Examen 1er Bimestre 2023 - B</h3>
+              <p>
+                <strong>Ejercicio2: </strong> La empresa SuperMarket Corporation requiere de una BD que permita apoyar la gestión de su sistema de ventas. La empresa necesita
+                  llevar un control de proveedores, clientes, productos y ventas.
+                  De los proveedores se requiere conocer su RUC, nombre, dirección, teléfono y página web. De los clientes se requiere saber su CI, nombre,
+                  dirección y puede tener varios teléfonos de contacto. La dirección se entiende por calle, número y ciudad.
+                  Un producto tiene un id único, nombre, precio actual, stock y nombre del proveedor. Además se organizan en categorías, y cada producto
+                  va sólo en una categoría. Una categoría tiene id, nombre y descripción.
+                  Por razones de contabilidad, se debe registrar la información de cada venta con un id, fecha, cliente, descuento y monto nal. Además se
+                  debe guardar el precio al momento de la venta, la cantidad vendida y el monto total por el producto.
+                  Elabore el diagrama Entidad-Relación.
+              </p>
+            </article>
+          </details>
+        
+          <details>
+            <summary>Diseño de Base de Datos para Observaciones de Aves</summary>
+            <article>
+              <h3>Diseño de Base de Datos para Observaciones de Aves</h3>
+              <p>
+                Se quiere diseñar una base de datos que contenga información sobre las <em>observaciones</em> realizadas a distintas <em>especies </em> de aves. Para ello se han de considerar las siguientes especificaciones:
+              </p>
+              <ul>
+                <li>
+                  Cada especie de ave se identifica por su nombre científico. Se desea conocer su nombre vulgar y una breve descripción de las características más importantes que la diferencias del <em>grupo ornitológico </em> al que pertenece.
+                </li>
+                <li>
+                  Los grupos ornitológicos clasifican las especies según sus similitudes estructurales, por ej, el grupo de las zancudas se caracteriza por tener patas largas y pico largo. Por lo tanto guardaremos información acerca de las patas, dedos y pico. Cada especie de ave está siempre asignada a un solo grupo ornitológico.
+                </li>
+                <li>Cada especie de ave está siempre asignada a un solo grupo ornitológico.</li>
+                <li>
+                  Existen asociaciones ornitológicas de las cuales se quiere saber su nombre, la dirección y el teléfono. Cada una de estas asociaciones consta de un grupo de personas, los observadores, que son los que realizan los avistamientos de las distintas especies. De los observadores se requiere su código de observador, la CI, el nombre completo y la dirección. Además un observador sólo puede estar adscrito a una asociación.
+                </li>
+                <li>
+                  Las zonas de observación tienen un código de zona que es único. También se quiere saber el nombre de la misma, la comunidad autónoma a la que pertenece, las provincia y el tipo (si es una laguna, un río, una zona costera, etc..). En cada zona se encuentra por lo menos un observador, y puede haber varios de distintas asociaciones o de la misma. Cada observador está asignado a una determinada zona.
+                </li>
+                <li>
+                  También se desea guardar información acerca de la fecha en la que el observador divisa una determinada especie, teniendo en cuenta que éstos realizan trabajo de campo cada tres días y que además sólo anotan el primer avistamiento de una determinada especie por día. Esta información es muy importante para controlar las especies de aves que existen y, por tanto, tendremos que guardar las observaciones aunque los observadores ya no se encuentren activos.
+                </li>
+              </ul>
+              <p>
+                Diseñar el MER y Modelo relacional (grafo relacional). Indicar en él las claves primarias, claves alternativas y las claves ajenas. De estas últimas especificar los modos de borrado y modificación.
+              </p>
+
+              <div class="note">
+                <strong>Paso1:</strong>  Identificar las relaciones básicas.
+                <p>Encontramos la relación especie cuya PK será nombre_cientifico. Se puede tomar a nombre_vulgar como <a href="clavesArlternativas.html">clave alternativa</a></p>
+                <p>Los grupos ornitológicos tienen características para almacenar, creamos una nueva relacion grupo_ornitologico</p>
+                <strong>Paso2: </strong> Análisis de los supuestos semánticos
+              </div>
+            </article>
+          </details>
+        </section>
       <section class="main-section" id="Reference">
         <header>Reference</header>
         <article>
